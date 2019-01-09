@@ -17,6 +17,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class PostsRepositoryTest {
+	/**
+	~/h2-console JDBC URL : jdbc:h2:mem:testdb  
+	**/
 	
 	@Autowired
 	PostsRepository postsRepository;
