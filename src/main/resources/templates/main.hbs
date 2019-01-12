@@ -22,6 +22,7 @@
                     <th>제목</th>
                     <th>작성자</th>
                     <th>최종수정일</th>
+                    <th>비고</th>
                 </tr>
             </thead>
             <tbody id="tbody">
@@ -31,6 +32,11 @@
                     <td>{{title}}</td>
                     <td>{{author}}</td>
                     <td>{{modifiedDate}}</td>
+                    <td>
+                    	<a href="/posts/{{id}}/delete">
+                    	<button type="button" class="btn btn-danger" id="btn-delete">삭제</button>
+                    	</a>
+                    </td>
                 </tr>
             {{/each}}
             </tbody>
