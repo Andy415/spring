@@ -1,2 +1,2 @@
-insert into posts (title, author, content, created_date, modified_date) values ('Å×½ºÆ®1', 'test1@gmail.com', 'Å×½ºÆ®1ÀÇ º»¹®', now(), now());
-insert into posts (title, author, content, created_date, modified_date) values ('Å×½ºÆ®2', 'test2@gmail.com', 'Å×½ºÆ®2ÀÇ º»¹®', now(), now());
+insert into posts (title, author, content, created_date, modified_date) values ('í…ŒìŠ¤íŠ¸ ì œëª©1', 'test1@gmail.com', 'í…ŒìŠ¤íŠ¸ ë³¸ë¬¸1', now(), now());
+insert into posts (title, author, content, created_date, modified_date) values ('í…ŒìŠ¤íŠ¸ ì œëª©2', 'test2@gmail.com', 'í…ŒìŠ¤íŠ¸ ë³¸ë¬¸2', now(), now());

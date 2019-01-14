@@ -49,6 +49,19 @@ public class PostsServiceTest {
 	
 	@Test
 	public void 게시글_시간역순불러오기() {
+		
+		postsRepository.save(Posts.builder()
+				.title("1")
+				.content("1")
+				.author("andy@abcd.com")
+				.build());
+		
+		postsRepository.save(Posts.builder()
+				.title("2")
+				.content("2")
+				.author("andy@abcd.com")
+				.build());
+		
 		List<Posts> postsList = postsRepository.findAll();
 		
 		List<PostsMainResponseDto> postsListDesc = postsService.findAllDesc();
