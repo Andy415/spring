@@ -32,11 +32,11 @@ public class PostsServiceTest {
 	}
 	
 	@Test
-	public void Dtoµ¥ÀÌÅÍ°¡_postsÅ×ÀÌºí¿¡_ÀúÀåµÈ´Ù() {
+	public void DTOë°ì´í„°ê°€_postsí…Œì´ë¸”ì—_ì €ì¥ëœë‹¤() {
 		PostsSaveRequestDto dto = PostsSaveRequestDto.builder()
 				.author("andy@abcd.com")
-				.content("Å×½ºÆ®")
-				.title("Å×½ºÆ® Å¸ÀÌÆ²")
+				.content("í…ŒìŠ¤íŠ¸")
+				.title("í…ŒìŠ¤íŠ¸ íƒ€ì´í‹€")
 				.build();
 		
 		postsService.save(dto);
@@ -48,7 +48,7 @@ public class PostsServiceTest {
 	}
 	
 	@Test
-	public void °Ô½Ã±Û¸®½ºÆ®_¿ª¼øÀ¸·Î_ºÒ·¯¿À±â() {
+	public void ê²Œì‹œê¸€_ì‹œê°„ì—­ìˆœë¶ˆëŸ¬ì˜¤ê¸°() {
 		List<Posts> postsList = postsRepository.findAll();
 		
 		List<PostsMainResponseDto> postsListDesc = postsService.findAllDesc();

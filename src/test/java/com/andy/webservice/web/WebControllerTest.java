@@ -18,10 +18,10 @@ public class WebControllerTest {
 	private TestRestTemplate restTemplate;
 	
 	@Test
-	public void ¸ŞÀÎÆäÀÌÁö_·Îµù() {
+	public void ë©”ì¸í˜ì´ì§€_ë¡œë”©() {
 		String body = this.restTemplate.getForObject("/", String.class);
 		
-		assertThat(body).contains("½ºÇÁ¸µºÎÆ®·Î À¥");
+		assertThat(body).contains("ìŠ¤í”„ë§ë¶€íŠ¸ë¡œ ì›¹");
 		
 	}
 

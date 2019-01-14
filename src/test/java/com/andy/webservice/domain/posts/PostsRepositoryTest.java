@@ -27,32 +27,32 @@ public class PostsRepositoryTest {
 	@After
 	public void cleanup() {
 		/**
-		Å×½ºÆ® ¸Ş¼Òµå ³¡³¯ ¶§¸¶´Ù repository ÀüÃ¼ ºñ¿ì´Â ÄÚµå  
+		í…ŒìŠ¤íŠ¸ ë ˆí¬ì§€í† ë¦¬ ì´ˆê¸°í™”
 		**/
 		postsRepository.deleteAll();
 	}
 	
 	@Test
-	public void °Ô½Ã±ÛÀúÀå_ºÒ·¯¿À±â() {
+	public void ê²Œì‹œê¸€ì €ì¥_ë¶ˆëŸ¬ì˜¤ê¸°() {
 		postsRepository.save(Posts.builder()
-				.title("Å×½ºÆ® °Ô½Ã±Û")
-				.content("Å×½ºÆ® º»¹®")
+				.title("í…ŒìŠ¤íŠ¸ ì œëª©")
+				.content("í…ŒìŠ¤íŠ¸ ë³¸ë¬¸")
 				.author("andy@abcd.com")
 				.build());
 		
 		List<Posts> postsList = postsRepository.findAll();
 		
 		Posts posts = postsList.get(0);
-		assertThat(posts.getTitle(), is("Å×½ºÆ® °Ô½Ã±Û"));
-		assertThat(posts.getContent(), is("Å×½ºÆ® º»¹®"));
+		assertThat(posts.getTitle(), is("í…ŒìŠ¤íŠ¸ ì œëª©"));
+		assertThat(posts.getContent(), is("í…ŒìŠ¤íŠ¸ ë³¸ë¬¸"));
 	}
 	
 	@Test
-	public void BaseTimeEntity_µî·Ï () {
+	public void BaseTimeEntity_ì €ì¥ () {
 		LocalDateTime now = LocalDateTime.now();
 		postsRepository.save(Posts.builder()
-				.title("Å×½ºÆ® °Ô½Ã±Û")
-				.content("Å×½ºÆ® º»¹®")
+				.title("í…ŒìŠ¤íŠ¸ ì œëª©")
+				.content("í…ŒìŠ¤íŠ¸ ë³¸ë¬¸")
 				.author("andy@abcd.com")
 				.build());
 		
