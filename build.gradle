@@ -1,6 +1,7 @@
 buildscript {
 	ext {
 		springBootVersion = '2.1.1.RELEASE'
+		swaggerVersion = '2.5.0'
 	}
 	repositories {
 		mavenCentral()
@@ -31,5 +32,8 @@ dependencies {
 	runtimeOnly('com.h2database:h2')
 	compile 'pl.allegro.tech.boot:handlebars-spring-boot-starter:0.3.0'
 	compileOnly('org.projectlombok:lombok')
+	//swagger
+	compile group: 'io.springfox', name: 'springfox-swagger2', version: "${swaggerVersion}"
+	compile group: 'io.springfox', name: 'springfox-swagger-ui', version: "${swaggerVersion}"
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
